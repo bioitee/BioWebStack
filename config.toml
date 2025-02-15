@@ -1,4 +1,4 @@
-baseURL               = "https://hao.bioitee.com/"
+baseURL               = "https://hao.bioit.top/"
 languageCode          = "zh-CN"
 title                 = "生信网址导航 | BioWebStack"
 theme                 = "WebStack-Hugo"
@@ -11,9 +11,9 @@ publishDir            = "docs"
     author        = "shenweiyan"
     description   = "生信网址导航 | Bio IT 爱好者"
     siteurl       = "./"
-    upload        = "https://github.com/orgs/BioITee/discussions"
+    upload        = "https://github.com/orgs/bioitee/discussions"
     about         = "https://weiyan.cc"				              # 左侧导航栏的"关于我们"页面(./about)
-    repository    = "https://github.com/BioITee/BioWebStack"   	
+    repository    = "https://github.com/bioitee/BioWebStack"   	
     enablePreLoad = true	                                              # 网站完全打开前预加载的动画
     textPreLoad   = "生信网址导航"	                                      # 预加载的动画文字, 只有当enablePreLoad=true时生效
     expandSidebar = false                                                     # 默认展开左侧边导航栏

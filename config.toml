@@ -1,7 +1,7 @@
 baseURL               = "https://hao.bioit.top/"
 languageCode          = "zh-CN"
 title                 = "生信网址导航 | BioWebStack"
-theme                 = "WebStack-Hugo"
+theme                 = "NavPage-Hugo-Theme"
 preserveTaxonomyNames = true
 disablePathToLower    = true
 hasCJKLanguage        = true
@@ -10,22 +10,20 @@ publishDir            = "docs"
 [params]
     author        = "shenweiyan"
     description   = "生信网址导航 | Bio IT 爱好者"
-    siteurl       = "./"
     upload        = "https://github.com/orgs/bioitee/discussions"
     about         = "https://weiyan.cc"				              # 左侧导航栏的"关于我们"页面(./about)
     repository    = "https://github.com/bioitee/BioWebStack"   	
     enablePreLoad = true	                                              # 网站完全打开前预加载的动画
     textPreLoad   = "生信网址导航"	                                      # 预加载的动画文字, 只有当enablePreLoad=true时生效
     expandSidebar = false                                                     # 默认展开左侧边导航栏
-    logosPath     = "img/logos"	              # 网站每个导航地址logo存放地址
-    defaultLogo   = "img/logos/default.webp"  # logo图片资源不存在或者错误时, 默认显示的logo; 该参数如为空,将会一直加载对应的logo,直至成功
-    baiduhmid     = '6eb87932f29f7e3a58bf1a37a1696810'                        # 百度统计 hm.src 的 ID
 
-[markup.goldmark.renderer]
-    unsafe = true
+[params.logo]
+    logosType         = "PATH"                                  # 站点logo获取方式(API/PATH)
+    logosAPI          = "https://favicon.im/"                   # 通过 API 的方式获取图标, logosType=API 生效
+    largerSize        = true                                    # larger=true, logosType=API 生效
+    logosPath         = "img/logos"                             # 网站每个导航地址logo存放地址, logosType=PATH 时生效
+    defaultLogo       = "img/logos/default.webp"                # logo图片资源不存在或错误时, 默认显示的logo; 该参数如为空,将会一直加载对应的logo,直至成功
 
-[params.qweather]
-    key = "085791e805a24491b43b06cf58ab31e7"
 
 [params.images]
     favicon           = "img/sites/bi-favicon.png"
@@ -35,6 +33,19 @@ publishDir            = "docs"
     logoExpandDark    = "img/sites/biwebstack-d.png"
     logoCollapseLight = "img/sites/bi-logo.png"
     logoCollapseDark  = "img/sites/bi-logo.png"
+
+[params.tpweather]
+    key = "10c4daf3-6a05-4d21-b26f-2c0b9349ee8b"                # 心知天气(https://www.seniverse.com/widgetv3)
+
+[params.seo]
+    baiduhmid       = ''                                        # 百度统计 hm.src 的 ID
+    baiduSiteVer    = ''                                        # 百度HTML标签验证(baidu-site-verification)
+    tj51laid        = ''                                        # 51.LA 网站统计
+    tj51lack        = ''
+    GoogleAdsClient = ''                                        # Google AdSense
+
+[markup.goldmark.renderer]
+    unsafe = true
 
 [params.footer]
     copyright = '本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：<a href="mailto:shen@weiyan.tech?subject=生信网址导航意见反馈" target="_blank">shen@weiyan.tech</a> <br/>&copy; 2021 - {year} By [WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo) | [Bio IT 爱好者](https://www.bioitee.com/) | [粤ICP备16023717号](http://beian.miit.gov.cn/)<br/>Powered by [GitHub Pages](https://github.com/bioitee/BioWebStack) <br/><a href="https://tongji.baidu.com/" target="_blank"><img border="0" src="https://tongji.baidu.com/sc-web/image/icon/31.gif" alt="百度统计" title="百度统计"></a>'

@@ -1,0 +1,145 @@
+---
+
+- taxonomy: 常用
+  dataid: general
+  select: bing
+  links:
+    - name: 百度
+      sid: baidu
+      value: "https://www.baidu.com/s?wd="
+      placeholder: "百度一下，你就知道"
+    - name: 必应
+      sid: bing
+      value: "https://cn.bing.com/search?q="
+      placeholder: "微软 Bing 搜索"
+    - name: 谷歌
+      sid: google
+      value: "https://www.google.com/search?q="
+      placeholder: "谷歌搜索"
+    - name: 软件
+      sid: anaconda
+      value: "https://anaconda.org/search?q="
+      placeholder: "Anaconda 软件搜索"
+    - name: 文献
+      sid: pubmed
+      value: "https://pubmed.ncbi.nlm.nih.gov/?term="
+      placeholder: "PubMed 搜索/文章标题/关键字"
+
+- taxonomy: 搜索
+  dataid: search
+  select: baidu1
+  links:
+    - name: 百度
+      sid: baidu1
+      value: "https://www.baidu.com/s?wd="
+      placeholder: "百度一下，你就知道"
+    - name: 必应
+      sid: bing1
+      value: "https://cn.bing.com/search?q="
+      placeholder: "微软 Bing 搜索"
+    - name: 谷歌
+      sid: google1
+      value: "https://www.google.com/search?q="
+      placeholder: "谷歌搜索"
+    - name: 360
+      sid: 360
+      value: "https://www.so.com/s?q="
+      placeholder: "360 好搜"
+    - name: 搜狗
+      sid: sogo
+      value: "https://www.sogou.com/web?query="
+      placeholder: "搜狗搜索"
+
+- taxonomy: 工具
+  dataid: tools
+  select: whois
+  links:
+    - name: 权重查询
+      sid: rank
+      value: "https://rank.chinaz.com/all/"
+      placeholder: "请输入网址(不带 https://)"
+    - name: 友链检测
+      sid: link
+      value: "https://link.chinaz.com/"
+      placeholder: "请输入网址(不带 https://)"
+    - name: 域名信息查询
+      sid: whois
+      value: "https://who.is/whois/"
+      placeholder: "请输入网址(不带 https://)"
+    - name: "PING 检测"
+      sid: ping
+      value: "https://ping.chinaz.com/"
+      placeholder: "请输入网址(不带 https://)"
+    - name: 死链检测
+      sid: 404
+      value: "https://tool.chinaz.com/Links/?DAddress="
+      placeholder: "请输入网址(不带 https://)"
+      
+- taxonomy: 社区        
+  dataid: social
+  select: wechat
+  links:
+    - name: 知乎
+      sid: zhihu
+      value: "https://www.zhihu.com/search?type=content&q="
+      placeholder: "知乎社区"
+    - name: 微信
+      sid: wechat
+      value: "https://weixin.sogou.com/weixin?type=2&query="
+      placeholder: "微信公众平台"
+    - name: 微博
+      sid: weibo
+      value: "https://s.weibo.com/weibo/"
+      placeholder: "搜索微博"
+    - name: 豆瓣
+      sid: douban
+      value: "https://www.douban.com/search?q="
+      placeholder: "搜索你感兴趣的内容和人"
+
+- taxonomy: 生活      
+  dataid: life
+  select: jd
+  links:
+    - name: 淘宝
+      sid: taobao
+      value: "https://s.taobao.com/search?q="
+      placeholder: "淘宝搜索"
+    - name: 京东
+      sid: jd
+      value: "https://search.jd.com/Search?keyword="
+      placeholder: "京东搜索"
+    - name: 下厨房
+      sid: xcf
+      value: "https://www.xiachufang.com/search/?keyword="
+      placeholder: "下厨房搜索"
+    - name: 香哈菜谱
+      sid: xiangha
+      value: "https://www.xiangha.com/so/?q=caipu&s="
+      placeholder: "搜食谱、食材"
+    - name: 12306
+      sid: 12306
+      value: "https://www.12306.cn/?"
+      placeholder: "搜索车票、餐饮、常旅客、相关规章"
+
+- taxonomy: 求职
+  dataid: job
+  select: zhaopin
+  links:
+    - name: 智联招聘
+      sid: zhaopin
+      value: "https://sou.zhaopin.com/jobs/searchresult.ashx?kw="
+      placeholder: "搜索职位、公司"
+    - name: 前程无忧
+      sid: 51job
+      value: "https://search.51job.com/?"
+      placeholder: "搜索职位、全文"
+    - name: 拉钩网
+      sid: lagou
+      value: "https://www.lagou.com/jobs/list_"
+      placeholder: "搜索职位、公司或地点"
+    - name: 猎聘网
+      sid: liepin
+      value: "https://www.liepin.com/zhaopin/?key="
+      placeholder: "搜索职位、公司"
+
+
